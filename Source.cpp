@@ -1,32 +1,31 @@
 #include<iostream>
 using namespace std;
 
+//declare a class
+class VinsonsClass
+{
+	//access specifier
+	//when using public access specifier means you can use out side of this class
+public:
+	//create a function
+	void coolSaying()
+	{
+		cout << "preaching to the choir " << endl;
+	}
+};
 
-int addNumbers(int x, int y);
 
 int main()
 {
-	int x, y;
-	cout << "Please enter two numbers to add" << endl;
-	cout << "First number: " ;
-	cin >> x;
-	cout << "Second Number: " ;
-	cin >> y;
-	cout << endl << "=" << addNumbers(x, y) << endl << endl;
-
-
+	//lets talk about objects
+	//you need objects to tell what class your working with
+	//declare object
+	VinsonsClass vinsonsObject;
+	//using dot seperators
+	vinsonsObject.coolSaying();
 	system("PAUSE");
 	return 0;
 }
-
-
-int addNumbers(int x, int y)
-{
-	int answer = x + y;
-	return answer;
-}
-
-
 
 
 
@@ -79,5 +78,31 @@ return age;
 void FavoriteNumber(int x)
 {
 cout << "vinson is "<<x<<" years old"<< endl;
+}
+*/
+//===================================================================
+/*
+int addNumbers(int x, int y);
+
+int main()
+{
+int x, y;
+cout << "Please enter two numbers to add" << endl;
+cout << "First number: " ;
+cin >> x;
+cout << "Second Number: " ;
+cin >> y;
+cout << endl << "= " << addNumbers(x, y) << endl << endl;
+
+
+system("PAUSE");
+return 0;
+}
+
+
+int addNumbers(int x, int y)
+{
+int answer = x + y;
+return answer;
 }
 */
