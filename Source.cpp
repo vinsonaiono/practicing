@@ -2,20 +2,58 @@
 #include<string>
 using namespace std;
 
-
+//you always want to make your variables in your class PRIVATE*
 class VinsonsClass
 {
-public:
+private:
 	//make a variable called name
 	string name;
+	int age;
+public:
+	//we want to change the name & to return the name
+	//if we set the string variable to x then it will only equal what name we set it to
+	void setName(string x)
+	{
+		name = x;
+	}
+	//to get the name that we put in we use getName and return the name of that variable
+	string getName()
+	{
+		return name;
+	}
+	void setAge(int y)
+	{
+		age = y;
+	}
+	int getAge()
+	{
+		return age;
+	}
 };
 int main()
 {
-	//create an object for 
-	VinsonsClass vinsonsObject;
-	vinsonsObject.name = "vinson AIono";
+	//declare variables for user input to be assigned to
+	string x = "";
+	int y;
+	//ask user for input
+	cout << "what is your name: " << endl;
+	//assign input to variable x for the name
+	cin >> x;
+	//ask user for input for age
+	cout << "How old are you: " << endl;
+	//assign user input for age to variable y
+	cin >> y;
 
-	cout << vinsonsObject.name;
+	//declare class object
+	VinsonsClass VO;
+	//use setters to call the setter functions in vinsonsClass Object
+	//setter for the name
+	VO.setName(x);
+	//setter for the age
+	VO.setAge(y);
+
+	//to print the functions use the <object name>.<function name>()
+	cout <<"Thank you "<< VO.getName()<< " you are "<< VO.getAge()<<"years old." << endl;
 	system("PAUSE");
 	return 0;
 }
