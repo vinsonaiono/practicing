@@ -1,88 +1,14 @@
 #include<iostream>
 #include<string>
+#include "Source1.h"
 using namespace std;
 
-//you always want to make your variables in your class PRIVATE*
-class VinsonsClass
-{
-private:
-	//make a variable called name
-	string name;
-	int age;
-public:
-	//Declare the constructor
-	VinsonsClass()
-	{
-		cout << "Hello Everyone, Please Introduce yourself!" ;
-	}
-	//we want to change the name & to return the name
-	//if we set the string variable to x then it will only equal what name we set it to
-	void setName(string x)
-	{
-		name = x;
-	}
-	//to get the name that we put in we use getName and return the name of that variable
-	string getName()
-	{
-		return name;
-	}
-	void setAge(int y)
-	{
-		age = y;
-	}
-	int getAge()
-	{
-		return age;
-	}
-};
+
 int main()
 {
-	//declare class object
-	//any constructor will automatically be called
-	VinsonsClass VO;
-
-	//declare variables for user input to be assigned to
-	string x = "";
-	int y;
-
-	//ask user for input
-	cout << "\n\nwhat is your name: ";
-	//assign input to variable x for the name
-	cin >> x;
-	//ask user for input for age
-	cout << "\nHow old are you: ";
-	//assign user input for age to variable y
-	cin >> y;
-
-	
-	//use setters to call the setter functions in vinsonsClass Object
-	//setter for the name
-	VO.setName(x);
-	//setter for the age
-	VO.setAge(y);
-
-	//to print the functions use the <object name>.<function name>()
-	cout <<"\n\nThank you "<< VO.getName()<< ", you are "<< VO.getAge()<<" years old.\n\n" << endl;
 	system("PAUSE");
 	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*#include<iostream>
@@ -175,3 +101,71 @@ return 0;
 }
 */
 
+
+//===================================================================
+/*
+//you always want to make your variables in your class PRIVATE*
+class VinsonsClass
+{
+private:
+//make a variable called name
+string name;
+int age;
+public:
+//Declare the constructor
+VinsonsClass()
+{
+cout << "Hello Everyone, Please Introduce yourself!" ;
+}
+//we want to change the name & to return the name
+//if we set the string variable to x then it will only equal what name we set it to
+void setName(string x)
+{
+name = x;
+}
+//to get the name that we put in we use getName and return the name of that variable
+string getName()
+{
+return name;
+}
+void setAge(int y)
+{
+age = y;
+}
+int getAge()
+{
+return age;
+}
+};
+int main()
+{
+//declare class object
+//any constructor will automatically be called
+VinsonsClass VO;
+
+//declare variables for user input to be assigned to
+string x = "";
+int y;
+
+//ask user for input
+cout << "\n\nwhat is your name: ";
+//assign input to variable x for the name
+cin >> x;
+//ask user for input for age
+cout << "\nHow old are you: ";
+//assign user input for age to variable y
+cin >> y;
+
+
+//use setters to call the setter functions in vinsonsClass Object
+//setter for the name
+VO.setName(x);
+//setter for the age
+VO.setAge(y);
+
+//to print the functions use the <object name>.<function name>()
+cout <<"\n\nThank you "<< VO.getName()<< ", you are "<< VO.getAge()<<" years old.\n\n" << endl;
+system("PAUSE");
+return 0;
+}
+*/
