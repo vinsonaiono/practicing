@@ -1,34 +1,24 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
-//declare a class
+
 class VinsonsClass
 {
-	//access specifier
-	//when using public access specifier means you can use out side of this class
 public:
-	//create a function
-	void coolSaying()
-	{
-		cout << "preaching to the choir " << endl;
-	}
+	//make a variable called name
+	string name;
 };
-
-
 int main()
 {
-	//lets talk about objects
-	//you need objects to tell what class your working with
-	//declare object
+	//create an object for 
 	VinsonsClass vinsonsObject;
-	//using dot seperators
-	vinsonsObject.coolSaying();
+	vinsonsObject.name = "vinson AIono";
+
+	cout << vinsonsObject.name;
 	system("PAUSE");
 	return 0;
 }
-
-
-
 
 
 
@@ -106,3 +96,35 @@ int answer = x + y;
 return answer;
 }
 */
+
+//===================================================================
+
+
+/*
+//declare a class
+class VinsonsClass
+{
+//access specifier
+//when using public access specifier means you can use out side of this class
+public:
+//create a function
+void coolSaying()
+{
+cout << "preaching to the choir " << endl;
+}
+};
+
+
+int main()
+{
+//lets talk about objects
+//you need objects to tell what class your working with
+//declare object
+VinsonsClass vinsonsObject;
+//using dot seperators
+vinsonsObject.coolSaying();
+system("PAUSE");
+return 0;
+}
+*/
+
