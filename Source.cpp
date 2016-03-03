@@ -6,9 +6,41 @@ using namespace std;
 
 int main()
 {
+	int x = 10;
+	int y = 30;
+	//you can also you <,>,==,<=,!=,
+	if (x == 10 && y >x)
+	{
+		cout << "yes you did it!" << endl;
+	}
+
+
 	system("PAUSE");
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*#include<iostream>
