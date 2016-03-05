@@ -6,13 +6,25 @@ using namespace std;
 
 int main()
 {
-	int x = 10;
-	int y = 30;
-	//you can also you <,>,==,<=,!=,
-	if (x == 10 && y >x)
+	string fistLine = "bottles of beer on the wall ";
+	string secLine = "bottles of beer!";
+	string thirdLine = "you take one down and pass it around";
+	string lastLine = "no more bottles of beer on the wall! ";
+	int bottles;
+	int start = 99;
+
+	cout << start << fistLine << endl;
+	cout << start << secLine << endl;
+	cout << thirdLine << endl;
+
+	for (int bottles = 99; bottles > 0; (bottles--))
 	{
-		cout << "yes you did it!" << endl;
+		cout << bottles << fistLine << endl << endl;
+		cout << bottles << fistLine << endl;
+		cout << bottles << secLine << endl;
+		cout << thirdLine << endl;
 	}
+	cout << lastLine<<endl;
 
 
 	system("PAUSE");
